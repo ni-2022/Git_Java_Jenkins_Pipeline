@@ -14,10 +14,11 @@ pipeline {
             }
         }
         stage('Build') {
-            steps {
-                dir("/var/lib/jenkins/workspace/New_demo/my-app/") {
-                sh 'mvn -B -DskipTests clean package'
-                }
+            steps {                
+                dir ("F:/Bolton_University/DevOps/Others/Naveed_Islam_Lectures/Weekwise_Lectures/CI_CD_Jenkins/jenkins-pipeline-example-main/jenkins-pipeline-example-main/my-app/")
+                    {
+                    sh 'mvn -B -DskipTests clean package'
+                    }
             
             }
         }
