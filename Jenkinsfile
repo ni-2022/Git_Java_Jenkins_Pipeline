@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {                
-                dir ("F:/Bolton_University/DevOps/Others/Naveed_Islam_Lectures/Weekwise_Lectures/CI_CD_Jenkins/jenkins-pipeline-example-main/jenkins-pipeline-example-main/my-app/")
+                dir ("C:\ProgramData\Jenkins\.jenkins\Java_Maven_Pipeline\")
                     {
                     sh 'mvn -B -DskipTests clean package'
                     }
